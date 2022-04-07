@@ -19,10 +19,62 @@ body {
 .sidebar {
   width: 300px;
   background: royalblue;
+  flex-shrink: 0;
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+}
+
+/*Solution*/
+body{
+  display: flex;
+  flex-direction: column;
+}
+.content{
+  flex: 1;
+  display: flex;
+}
+.header{
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  font-weight: 900;
+  font-size: 32px;
+}
+.card-container{
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+.card{
+  width: 300px;
+  padding: 32px;
+}
+
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+a{
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+}
+ul{
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+
+}
+.sidebar{
+  padding: 16px;
 }

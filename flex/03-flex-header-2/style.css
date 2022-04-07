@@ -45,4 +45,24 @@ a {
 
 ul {
   list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 16px;
+}
+/* Solution */
+.header{
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}
+.left-nav{
+  display: flex;
+  flex: 1;
+  gap: 16px;
+  align-items: center;
+}
+.right-nav{
+  display: flex;
+  gap: 20px;
 }
